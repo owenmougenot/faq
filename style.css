@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+  }
+  body{
+    background-image: url("./images/illustration-box-desktop.svg"),linear-gradient(hsl(273, 75%, 66%) 20%, hsl(240, 73%, 65%));
+    background-image: url("illustration-box-desktop.png"),linear-gradient(hsl(273, 75%, 66%) 20%, hsl(240, 73%, 65%));
+    padding: 6.25rem 12rem 6.25rem 12rem;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
+    background-position: top 20rem left 4.063rem, center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.75rem;
+  }
+  html {
+      height: 100%;
+  }
+  .div0{
+    background-color: #fff;
+    background-image: url("./images/illustration-box-desktop.svg"), url("./images/illustration-woman-online-desktop.svg"), url("./images/bg-pattern-desktop.svg");
+    background-image: url("illustration-box-desktop.png"), url("illustration-woman-online-desktop.png"), url("bg-pattern-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top 13.719rem left -7.813rem, top 5.625rem left -5.313rem, bottom -7.5rem right 46.25rem;
+    border-radius: 1.563rem;
+    box-shadow: 15px 0px 20px -1px rgba(78, 78, 79, 0.50);
+    min-width: 62.5rem;
+    min-height: 31.25rem;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "div1 div2";
+  }
+  .attribution{
+    margin-top: 5rem;
+  }
+  h1{
+    font-weight: 700;
+    font-size: 1.875rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
+  }
+  .p1{
+    font-size: 1.063rem;
+    cursor: pointer;
+  }
+  p{
+    color: #4A4B5E;
+    padding: 0.188rem;
+  }
+  hr{
+    border: 0.04rem solid #e7e7e9;
+  }
+  .div1{
+    grid-area: div1;
+  }
+  .div2{
+    grid-area: div2;
+    padding: 1rem;
+  }
+  .img1{
+    padding-right: 9.875rem;
+    padding-top: 1.6rem;
+  }
+  .img2{
+    position: absolute;
+    width: 0%;
+  }
+  @media only screen and (max-width: 1024px) {
+    body{
+      background-image: linear-gradient(hsl(273, 75%, 66%) 20%, hsl(240, 73%, 65%));
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      display: grid;
+      padding-top: 12.5rem;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+      "div0"
+      "attribution";
+    }
+    .div0{
+      grid-area: div0;
+      min-width: 21.875rem;
+      min-height: 51rem;
+      height: auto;
+      background-color: #fff;
+      background-image: url("./images/bg-pattern-mobile.svg");
+      background-image: url("bg-pattern-mobile.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+      border-radius: 1.563rem;
+      box-shadow: 15px 0px 20px -1px rgba(78, 78, 79, 0.50);
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+      "div1"
+      "div2";
+    }
+    .attribution{
+      grid-area: attribution;
+    }
+    .p1{
+      font-size: 0.875rem;
+      padding: 0.7rem 0 0 0;
+      color: #1D1E35;
+    }
+    .div2{
+      padding: 3rem 1rem;
+    }
+    h1{
+      text-align: center;
+    }
+    .img2{
+      width: auto;
+      top: 4.5rem;
+      left: 2.5rem;
+    }
+    .img1{
+      padding-right: 2rem;
+    }
+  }
